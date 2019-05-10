@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">POS Lite</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--navigation menu-->
+    <string name="nav_home">Home</string>
+    <string name="nav_sales">Sales</string>
+    <string name="nav_items">Items</string>
+    <string name="nav_receipts">Receipts</string>
+    <string name="nav_setting">Settings</string>
+    <string name="nav_about">About</string>
+    <string name="nav_categories">Categories</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_email_username">Email or Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_password_does_not_match">Password does not match</string>
+    <string name="error_terms_of_use">Please read and agree the terms of use and privacy policy</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!-- Strings related to sign up -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_con_password">Confirm Password</string>
+    <string name="prompt_business_name">Business Name</string>
+    <string name="i_understand_and_agree">I understand and agree to EzePOS </string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="and"> and </string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="title_activity_sing_up">Sign Up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register">Create Account</string>
+    <string name="searching">Searching...</string>
+    <string name="save">Save</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Sales</item>
+        <item>Receipts</item>
+        <item>Categories</item>
+        <item>Items</item>
+        <item>Settings</item>
+    </string-array>
+
+
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="action_about">About</string>
+    <string name="categories">Categories</string>
+    <string name="items">Items</string>
+    <string name="receipts">Receipts</string>
+    <string name="new_category">New Category</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="action_search">Search...</string>
+    <string name="code">Code</string>
+    <string name="save_new">Save New</string>
+    <string name="new_item">New Item</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="receipt_no">Receipt #</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="settle">Settle</string>
+    <string name="sales">Sales</string>
+    <string name="delete">Delete</string>
+
+
+    <!-- TODO - add your ad unit Ids -->
+    <!-- AdMob ad unit IDs -->
+    <string name="admob_app_id">ca-app-pub-1709800666044595~6259805063</string>
+    <string name="banner_home_footer">ca-app-pub-1709800666044595/4050861548</string>
+
+</resources>

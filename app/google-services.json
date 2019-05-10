@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "154158750351",
+    "firebase_url": "https://pos-lite.firebaseio.com",
+    "project_id": "pos-lite",
+    "storage_bucket": "pos-lite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154158750351:android:b6dcb4e8b9e1ab83",
+        "android_client_info": {
+          "package_name": "com.ksoftsas.poslite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154158750351-civ6r96jvj56m1s8mgdsffr39tp8amoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWhX0AfcS2kEJRq4Cb627we5QUcq-wjY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154158750351-civ6r96jvj56m1s8mgdsffr39tp8amoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-1709800666044595~6259805063"
+    }
+  ],
+  "configuration_version": "1"
+}

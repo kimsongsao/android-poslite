@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dip">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="\u00A9 2019"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:autoLink="web"
+        android:text="www.ksoftsas.com"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Developers : Sao Kimsong, Hor Kimchheng"
+
+        android:gravity="center"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:paddingTop="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Version 1.0 beta"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

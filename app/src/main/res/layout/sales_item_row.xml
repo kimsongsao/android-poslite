@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingBottom="@dimen/row_padding5"
+    android:paddingTop="@dimen/row_padding5">
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thumbnail_sales"
+        android:layout_gravity="end"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="@dimen/ic_delete"
+            android:layout_height="@dimen/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/row_padding"
+            android:clickable="true"
+            android:onClick="deleteClick"
+            android:src="@drawable/ic_delete_white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/row_padding"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="@string/delete"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingRight="@dimen/row_padding"
+        android:paddingLeft="@dimen/row_padding">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="@dimen/thumbnail_sales"
+                android:layout_height="@dimen/thumbnail_sales"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/bg_circle"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView android:id="@+id/unit_of_measure"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:gravity="left|center|center_vertical"
+                    android:layout_width="0dp"
+                    android:textColorLink="#576586"
+                    android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/discount"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="80dp"
+                    android:textColorLink="#576586"
+                    android:textColor="@color/colorRed"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView android:id="@+id/price"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/clickMinus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="0dp"
+                    android:padding="5dp"
+                    android:background="@drawable/button_circle"
+                    android:textColor="@color/colorPrimary"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:text="-"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/clickQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:text="1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/button_rounded"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <Button
+                    android:id="@+id/clickAdd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_circle"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="5dp"
+                    android:text="+"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

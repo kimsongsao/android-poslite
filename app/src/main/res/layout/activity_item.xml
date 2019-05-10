@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CategoryActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_below="@id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@color/colorWhite"
+        tools:context=".activities.CategoryActivity">
+        <ScrollView
+            android:id="@+id/sign_up_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <EditText
+                            android:id="@+id/txtCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/code"
+                            android:inputType="textCapSentences"
+                            android:imeOptions="actionNext"
+                            android:drawableRight="@drawable/barcode_24"
+                            android:maxLines="1"
+                            android:ems="13"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+                    <Button
+                        android:id="@+id/btnBarCode"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:text=" "
+                        android:background="?android:attr/selectableItemBackground"
+                        />
+                </FrameLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/description"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:id="@+id/spinCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtUnitPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/price"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/row_padding"
+                    android:paddingRight="@dimen/row_padding"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:scaleType="fitCenter"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/no_image" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/row_padding"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/btnChoose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_photo"
+                        android:drawableLeft="@drawable/ic_camera"
+                        android:background="@drawable/button_flat_list"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/btnCamera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/take_photo"
+                        android:drawableLeft="@drawable/ic_choose"
+                        android:background="@drawable/button_flat_list"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/save"
+                    android:background="@drawable/button"
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="@dimen/row_padding"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnSaveNew"
+                    android:layout_marginLeft="@dimen/row_padding"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/save_new"
+                    android:background="@drawable/button"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>
